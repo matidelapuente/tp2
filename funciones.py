@@ -1,3 +1,11 @@
+def cantPalabras(unaCadena):
+    words = unaCadena.split()
+    count = 0
+    for word in words:
+        if not word.isdigit():
+            count += 1
+    return count
+
 def clean_text(unaCadena): 
     special_char =('.', ',', '"', "'", ';', ':', '-', '!', '(', ')', '+', '/', '@')
     clean_text = unaCadena
